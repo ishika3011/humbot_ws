@@ -43,10 +43,18 @@
 
 ## 🧪 **Run the Simulation**
 
+To get started, clone the repository and build the workspace:
+
 ```bash
-cd ~/humbot_ws
+# Clone the repository
+git clone https://github.com/ishika3011/humbot_ws.git
+cd humbot_ws
+
+# Build and source the workspace
 colcon build
 source install/setup.bash
+
+# Launch the full simulation
 ros2 launch humbot_bringup simulated_robot.launch.py
 
 ```
@@ -73,7 +81,7 @@ This launches:
 
 ## 🎥 **Demo**
 
-> [![Gazebo Simulation](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)
+> [![Gazebo Simulation]](https://drive.google.com/drive/folders/1wNDLFWobwE196mlwIC4zr3eqkfzpGFgx?usp=sharing)
 
 ---
 
