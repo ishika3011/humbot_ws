@@ -1,0 +1,10 @@
+# acados generated files
+nmpc/c_generated_code/
+nmpc/unicycle_ocp.json
+
+# Compiled files
+*.o
+*.so
+
+# VS Code
+.vscode/
