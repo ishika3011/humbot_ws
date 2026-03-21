@@ -106,11 +106,11 @@ humbot_ws/
 ```
 ## 🚀 **Future Roadmap**
 
-- [ ] Add Model Predictive Path Integral (MPPI) control  
-- [ ] Reinforcement-learning-based adaptive navigation  
-- [ ] Integrate dynamic obstacle tracking and re-planning  
-- [ ] Deploy on physical robot hardware  
-- [ ] Add human-aware navigation and social behavior layers  
+- **Phase A:** acados NMPC backbone
+- **Phase B:** Human-aware NMPC with anisotropic elliptic safety zones
+- **Phase C:** Single-agent PPO reinforcement learning
+- **Phase D:** Multi-robot MAPPO with centralised training
+- **Phase E:** Ablation study and paper writing
 
 ---
 
