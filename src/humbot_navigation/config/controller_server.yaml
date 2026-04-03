@@ -1,7 +1,7 @@
 controller_server:
   ros__parameters:
     use_sim_time: true
-    controller_frequency: 20.0 #hz like 20 times/sec
+    controller_frequency: 10.0 #hz like 20 times/sec
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
     min_theta_velocity_threshold: 0.001 #radian/sec
@@ -23,9 +23,10 @@ controller_server:
       stateful: true
 
     FollowPath:
-      plugin: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
-      desired_linear_vel: 0.3
-      lookahead_dist: 0.6
+      plugin: "humbot_nmpc/NMPCController"
+      lookahead_dist: 0.5      # metres — waypoint selection lookahead
+      N: 30                    # prediction horizon steps
+      Tf: 3.0                  # horizon time (seconds)
       min_lookahead_dist: 0.3
       max_lookahead_dist: 0.9
       lookahead_time: 1.5

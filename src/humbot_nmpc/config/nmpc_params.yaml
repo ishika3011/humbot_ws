@@ -1,0 +1,23 @@
+controller_server:
+  ros__parameters:
+    controller_frequency: 10.0
+    controller_plugins: ["FollowPath"]
+    FollowPath:
+      plugin: "humbot_nmpc/NMPCController"
+      N: 30
+      Tf: 3.0
+      lookahead_dist: 0.5
+      goal_dist_tol: 0.1
+      goal_angle_tol: 0.1
+
+progress_checker:
+  ros__parameters:
+    plugin: "nav2_controller::SimpleProgressChecker"
+    required_movement_radius: 0.05
+    movement_time_allowance: 10.0
+
+general_goal_checker:
+  ros__parameters:
+    plugin: "nav2_controller::SimpleGoalChecker"
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1

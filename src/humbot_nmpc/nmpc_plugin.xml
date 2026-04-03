@@ -1,0 +1,11 @@
+<library path="nmpc_controller">
+  <class
+    name="humbot_nmpc/NMPCController"
+    type="humbot_nmpc::NMPCController"
+    base_class_type="nav2_core::Controller">
+    <description>
+      NMPC local controller using acados SQP-RTI solver.
+      Horizon N=30, dt=0.1s
+    </description>
+  </class>
+</library>

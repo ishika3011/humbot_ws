@@ -4,19 +4,28 @@
   <name>humbot_nmpc</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="ishika.saijwal01.com">ishika</maintainer>
-  <license>TODO: License declaration</license>
+  <maintainer email="ishika.saijwal01@gmail.com">ishika</maintainer>
+  <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
   <depend>nav_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>pluginlib</depend>
+
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
+    <!-- Tells Nav2 this package exports a controller plugin -->
+    <nav2_core plugin="${prefix}/nmpc_plugin.xml"/>
   </export>
 </package>
