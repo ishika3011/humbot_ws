@@ -13,10 +13,10 @@ import numpy as np
 # ══════════════════════════════════════════════════════════════════════════════
 
 # Semi-major axis (along human heading direction — front/back)
-A_ELLIPSE = 0.5  # metres
+A_ELLIPSE = 0.25  # metres
 
 # Semi-minor axis (perpendicular to heading — sides)
-B_ELLIPSE = 0.3  # metres
+B_ELLIPSE = 0.15  # metres
 
 # Maximum number of humans to track (k-nearest)
 K_HUMANS = 3
